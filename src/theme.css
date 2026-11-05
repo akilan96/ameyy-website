@@ -1,0 +1,174 @@
+/* Theme controls keep the same contrast and brand accents across both modes. */
+.theme-toggle{width:36px;height:36px;display:grid;place-items:center;border:1px solid #d9dbe5;border-radius:50%;background:transparent;color:#373a48;cursor:pointer;font-size:18px;line-height:1;transition:background .2s,border-color .2s,color .2s}
+.theme-toggle:hover{background:#eceef5}
+.theme-toggle span{transform:translateY(-1px)}
+
+.footer-main{min-height:0;display:grid;grid-template-columns:minmax(200px,.7fr) 1.3fr;gap:72px;align-items:start;padding-top:47px;padding-bottom:42px}
+.footer-brand-block{display:flex;flex-direction:column;align-items:flex-start;gap:19px}
+.footer-brand-block>p{color:#9497a5;font-size:11px;margin:0}
+.footer-links{display:flex;flex-wrap:wrap;gap:19px;color:#c8c9d1;font-size:10px}
+.footer-contact h2{font-size:11px;text-transform:uppercase;letter-spacing:1.8px;margin:1px 0 23px;color:#fff}
+.footer-contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:21px 28px}
+.footer-contact-grid>div{min-width:0}
+.footer-contact-grid span{display:block;color:#8792a8;font-size:9px;text-transform:uppercase;letter-spacing:1.3px;margin-bottom:7px}
+.footer-contact-grid p,.footer-contact-grid a{display:block;color:#d9dfeb;font-size:11px;line-height:1.65;margin:0;overflow-wrap:anywhere}
+.footer-contact-grid a:hover{color:#66d8f4}
+
+html[data-theme="dark"]{color-scheme:dark;background:#0e1019}
+html[data-theme="dark"] body{background:#0e1019;color:#edf0f8}
+html[data-theme="dark"] .site-header{background:rgba(15,17,27,.94);border-color:rgba(255,255,255,.09)}
+html[data-theme="dark"] .brand-word{color:#f4f5fa}
+html[data-theme="dark"] .brand-word small{color:#9a9dab}
+html[data-theme="dark"] .nav-links{color:#bdc1cf}
+html[data-theme="dark"] .nav-links>a:not(.nav-cta):hover{color:#63d7f2}
+html[data-theme="dark"] .nav-cta{border-color:#3a3d4b;color:#f3f4f9}
+html[data-theme="dark"] .nav-cta:hover{background:#fff;color:#171821;border-color:#fff}
+html[data-theme="dark"] .theme-toggle{border-color:#3b3e4d;color:#f5d978}
+html[data-theme="dark"] .theme-toggle:hover{background:#272a38}
+html[data-theme="dark"] .menu-toggle{border-color:#3a3d4b}
+html[data-theme="dark"] .menu-toggle span{background:#f2f3f8}
+html[data-theme="dark"] .hero-lead,html[data-theme="dark"] .section-heading>p,html[data-theme="dark"] .career-left>p{color:#a7abba}
+html[data-theme="dark"] .hero-note,html[data-theme="dark"] .scroll-cue{color:#9397a6}
+html[data-theme="dark"] .button-dark{background:#f1f3fa;color:#171821}
+html[data-theme="dark"] .button-dark:hover{background:#dce2f4}
+html[data-theme="dark"] .marquee{background:#161925;border-color:#252938}
+html[data-theme="dark"] .marquee-track{color:#a2a6b4}
+html[data-theme="dark"] .offer-card{background:#161925;border-color:#282c3b;color:#f0f2f8}
+html[data-theme="dark"] .offer-card p{color:#a5a8b5}
+html[data-theme="dark"] .offer-card>a{border-color:#373b4a}
+html[data-theme="dark"] .products-foot{border-color:#2c2f3d;color:#9da1af}
+html[data-theme="dark"] .products-foot a{color:#e2e5ef}
+html[data-theme="dark"] .career-perk small{color:#a2a5b2}
+html[data-theme="dark"] .career-form-wrap,html[data-theme="dark"] .contact-panel{background:#181b27;border-color:#2b2e3c;color:#f0f2f8}
+html[data-theme="dark"] .form-heading>span{color:#a1a5b3}
+html[data-theme="dark"] .form-heading h3{color:#f1f2f8}
+html[data-theme="dark"] .form-heading p{color:#a5a8b5}
+html[data-theme="dark"] .application-form label{color:#c7cad5}
+html[data-theme="dark"] .application-form input:not([type=file]),html[data-theme="dark"] .application-form select,html[data-theme="dark"] .application-form textarea,html[data-theme="dark"] .upload-box{background:#11131c;border-color:#353948;color:#eef0f6}
+html[data-theme="dark"] .application-form input::placeholder,html[data-theme="dark"] .application-form textarea::placeholder{color:#777c8c}
+html[data-theme="dark"] .application-form select option{background:#181b27;color:#eef0f6}
+html[data-theme="dark"] .upload-box b{color:#e3e6f0}
+html[data-theme="dark"] .upload-box small{color:#9599a8}
+html[data-theme="dark"] .upload-icon{background:#24283a;color:#9daeff}
+html[data-theme="dark"] .form-status{color:#9faefc}
+html[data-theme="dark"] .footer-main>p{color:#a5a8b4}
+
+@media(max-width:700px){
+  .footer-main{padding-top:30px;padding-bottom:28px;display:flex;flex-direction:column;gap:28px}
+  .footer-brand-block{width:100%;display:grid;grid-template-columns:1fr auto;gap:15px}
+  .footer-brand-block>p{justify-self:end;text-align:right}
+  .footer-links{grid-column:1/-1;width:100%;justify-content:space-between;gap:10px}
+  .footer-contact{width:100%}
+  .footer-contact-grid{grid-template-columns:1fr;gap:16px}
+  .footer-contact h2{margin-bottom:17px}
+  html[data-theme="dark"] .nav-links{background:#11131d;border-color:#2b2e3c}
+  html[data-theme="dark"] .nav-links>a:not(.nav-cta){border-color:#2b2e3c;color:#d1d3df}
+}
+
+html[data-theme="dark"] .stat-card{background:#030617;border-color:rgba(56,106,255,.35)}
+html[data-theme="dark"] .stat-label{color:#9aa5cb}
+html[data-theme="dark"] .bento-dark{background:#040614;border-color:rgba(43,85,255,.3)}
+
+html[data-theme="dark"] .testimonial-card{background:#060816;border-color:rgba(48,88,255,.28)}
+
+/* Dark mode overrides for Products Portfolio & Modal */
+html[data-theme="dark"] .product-tab{background:#141724;border-color:#272b3c;color:#adb2c4}
+html[data-theme="dark"] .product-tab:hover{background:#1b1f30;color:#fff;border-color:#4b88ff}
+html[data-theme="dark"] .product-tab.is-active{background:linear-gradient(135deg,#1d5bff 0%,#0e3ec4 100%);color:#fff;border-color:#1d5bff}
+html[data-theme="dark"] .tab-count{background:rgba(255,255,255,.1);color:#cfd4e6}
+html[data-theme="dark"] .portfolio-card{background:#090c1c;border-color:rgba(43,85,255,.22);box-shadow:0 16px 45px rgba(0,2,16,.55)}
+html[data-theme="dark"] .portfolio-card:hover{border-color:rgba(79,139,255,.55);box-shadow:0 22px 55px rgba(26,92,255,.18)}
+html[data-theme="dark"] .portfolio-card.is-flagship{border-color:rgba(0,229,255,.35)}
+html[data-theme="dark"] .card-icon{background:#101427;border-color:#262c45}
+html[data-theme="dark"] .card-title{color:#f1f4fc}
+html[data-theme="dark"] .card-tagline{color:#9ea4ba}
+html[data-theme="dark"] .card-desc{color:#a3a8bc}
+html[data-theme="dark"] .feature-chip{background:#141829;color:#b0b5c8;border-color:#242940}
+html[data-theme="dark"] .card-footer-actions{border-color:rgba(255,255,255,.08)}
+html[data-theme="dark"] .card-details-btn{border-color:#2c324b;color:#63d7f2}
+html[data-theme="dark"] .card-details-btn:hover{background:#151a30;border-color:#63d7f2}
+html[data-theme="dark"] .card-cta-btn{background:#f1f3fa;color:#171821}
+html[data-theme="dark"] .card-cta-btn:hover{background:#00e5ff;color:#000}
+html[data-theme="dark"] .products-foot-sub{color:#8f95a9}
+html[data-theme="dark"] .product-modal-content{background:#0c0f20;border-color:rgba(56,106,255,.38);box-shadow:0 35px 90px rgba(0,2,18,.8)}
+html[data-theme="dark"] .modal-close-btn{background:#15192c;border-color:#2b3149;color:#a7acc0}
+html[data-theme="dark"] .modal-close-btn:hover{background:#20263f;color:#fff}
+html[data-theme="dark"] .modal-top{border-color:rgba(255,255,255,.08)}
+html[data-theme="dark"] .modal-icon-badge{background:#12162a;border-color:#262c45}
+html[data-theme="dark"] .modal-header-text h2{color:#f3f5fd}
+html[data-theme="dark"] .modal-tagline{color:#a3a9bf}
+html[data-theme="dark"] .modal-purpose-text{background:#12162a;color:#dbe0f2;border-left-color:#00e5ff}
+html[data-theme="dark"] .modal-feature-item{color:#cbd1e6}
+html[data-theme="dark"] .modal-chip{background:#15192c;color:#b8bdcf;border-color:#282e46}
+html[data-theme="dark"] .modal-chip-tech{background:rgba(0,229,255,.1);color:#00e5ff;border-color:rgba(0,229,255,.25)}
+html[data-theme="dark"] .modal-footer{background:#090c1a;border-color:rgba(255,255,255,.08)}
+html[data-theme="dark"] .modal-btn-secondary{border-color:#2d334d;color:#a3a9be}
+html[data-theme="dark"] .modal-btn-secondary:hover{background:#181d33;color:#fff}
+
+/* Dark mode overrides for Spotlight & Mode toggle */
+html[data-theme="dark"] .view-mode-toggle{background:rgba(255,255,255,.06);border-color:#2a2e42}
+html[data-theme="dark"] .mode-btn{color:#9aa2bf}
+html[data-theme="dark"] .mode-btn:hover{color:#fff}
+html[data-theme="dark"] .mode-btn.is-active{background:linear-gradient(135deg,#1d5bff 0%,#0e3ec4 100%);color:#fff}
+html[data-theme="dark"] .dock-card{background:#060818;border-color:rgba(255,255,255,.08)}
+
+
+/* Light Mode overrides for Our Clients section */
+html[data-theme="light"] .our-clients-section {
+  background: radial-gradient(ellipse 70% 50% at 50% -20%, rgba(29, 91, 255, 0.05), transparent 70%), #ffffff;
+  border-top-color: #e2e8f0;
+  border-bottom-color: #e2e8f0;
+}
+html[data-theme="light"] .our-clients-title {
+  color: #171821;
+}
+html[data-theme="light"] .client-tech-card {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 8px 24px rgba(18, 30, 85, 0.06);
+}
+html[data-theme="light"] .client-logo-plate {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+html[data-theme="light"] .client-tech-name {
+  color: #171821;
+}
+html[data-theme="light"] .testimonial-avatar {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+
+/* Dark Mode overrides for Our Clients section */
+html[data-theme="dark"] .our-clients-section {
+  background: radial-gradient(ellipse 70% 50% at 50% -20%, rgba(29, 91, 255, 0.14), transparent 70%), #040714;
+  border-top-color: rgba(255, 255, 255, 0.08);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] .our-clients-title {
+  color: #ffffff;
+}
+html[data-theme="dark"] .client-tech-card {
+  background: rgba(13, 18, 43, 0.75);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 35px rgba(0, 3, 16, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+html[data-theme="dark"] .client-tech-card:hover {
+  border-color: var(--client-accent, #00e5ff);
+  box-shadow: 0 18px 45px rgba(0, 2, 18, 0.7), 0 0 25px var(--client-glow, rgba(0, 229, 255, 0.25));
+}
+/* In Dark Mode: Dark in logo space! No white plate! */
+html[data-theme="dark"] .client-logo-plate {
+  background: #080d22;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 4px 18px rgba(0, 0, 0, 0.4);
+}
+html[data-theme="dark"] .client-tech-name {
+  color: #ffffff;
+}
+html[data-theme="dark"] .testimonial-avatar {
+  background: #080d22;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
